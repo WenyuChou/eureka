@@ -1,8 +1,8 @@
 spring:
   application:
-    name: polycis-eureka-server #服务民称
+    name: polycis-eureka-server
 server:
-  port: 10007 #服务端口号
+  port: 10007
   tomcat:
     uri-encoding: UTF-8
     max-threads: 200
@@ -14,7 +14,7 @@ eureka:
       enable: true
     registryFetchIntervalSeconds: 30
     serviceUrl:
-      defaultZone: http://192.168.10.19:10007/eureka/
+      defaultZone: http://192.168.15.160:10007/eureka/
   instance:
     lease-expiration-duration-in-seconds: 90
     leaseRenewalIntervalInSeconds: 30
