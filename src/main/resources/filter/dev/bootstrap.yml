@@ -4,8 +4,7 @@ spring:
   cloud:
     inetutils:
       #过滤ip网段，多个网卡可以采用这种方式配置
-      preferredNetworks:
-        - 192.168.10
+      use-only-site-local-interfaces: true
 server:
   port: 8761
   tomcat:
@@ -14,6 +13,7 @@ server:
     connection-timeout: 5000
     acceptCount: 100
 eureka:
+  #eureka作为服务一部分也可以注册
   client:
     serviceUrl:
       defaultZone: http://59.110.225.90:8761/eureka/
