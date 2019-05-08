@@ -5,7 +5,7 @@ spring:
     client:
       ipAddress: 59.110.225.90
 server:
-  port: 8761
+  port: 10035
   tomcat:
     uri-encoding: UTF-8
     max-threads: 200

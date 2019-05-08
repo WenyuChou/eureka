@@ -6,7 +6,7 @@ spring:
       #过滤ip网段，多个网卡可以采用这种方式配置
       use-only-site-local-interfaces: true
 server:
-  port: 8761
+  port: 10035
   tomcat:
     uri-encoding: UTF-8
     max-threads: 200
@@ -16,7 +16,7 @@ eureka:
   #eureka作为服务一部分也可以注册
   client:
     serviceUrl:
-      defaultZone: http://59.110.225.90:8761/eureka/
+      defaultZone: http://192.168.10.20:10007/eureka/
   server:
     #关闭client保护机制，以确保注册中心将不可用的实例正确剔除(仅限测试环境打开)
     enable-self-preservation: false
